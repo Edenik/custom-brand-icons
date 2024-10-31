@@ -1,4 +1,3 @@
-
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/elax46/custom-brand-icons)](https://github.com/elax46/custom-brand-icons/releases/latest)
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
@@ -14,16 +13,19 @@
 ![logo](https://res.cloudinary.com/dcongin7u/image/upload/v1707320837/cbi-logo.jpg)
 
 #### Custom brand icons use the prefix `phu:`
+
 #### Append Name (of the icon) after `phu:`
+
 - Example: `phu:eggs` ![Preview](/icon-svg/eggs.svg)
 - Example: `phu:chicken` ![Preview](/icon-svg/chicken.svg)
 
 # Icon Requests
 
 Want an icon? Open a [custom icon request](https://github.com/elax46/custom-brand-icons/issues/new?assignees=elax46&labels=icon-request&template=insertion-of-new-icons.md&title=Custom+Icon+request) or [contribute to the project](#developer-workflow).
--  Provide a **svg file and jpg logo of your request (we also are not mind readers and dont know every icon globaly so if no name is present please add it** and a image along with your request.
--  links to SVG's or Images will be ignored, you must upload the files into your request and they must be visible in post. `IGNORING THIS SIMPLE REQUEST WILL RESULT IN YOUR REQUEST BEING IGNORED AND CLOSED`  (if you can not be bothered to spend a few minutes doing this, why should we spend time looking for it and making it).
--  For those who [made their own icons](#developer-workflow), open pull requests on the **[dev branch](https://github.com/elax46/custom-brand-icons/pulls)**.
+
+- Provide a **svg file and jpg logo of your request (we also are not mind readers and dont know every icon globaly so if no name is present please add it** and a image along with your request.
+- links to SVG's or Images will be ignored, you must upload the files into your request and they must be visible in post. `IGNORING THIS SIMPLE REQUEST WILL RESULT IN YOUR REQUEST BEING IGNORED AND CLOSED` (if you can not be bothered to spend a few minutes doing this, why should we spend time looking for it and making it).
+- For those who [made their own icons](#developer-workflow), open pull requests on the **[dev branch](https://github.com/elax46/custom-brand-icons/pulls)**.
 
 ### Make sure to [install](#installation-methods) `custom-brand-icons.js` into `configuration.yaml` or `ui-lovelace.yaml`
 
@@ -33,15 +35,15 @@ Want an icon? Open a [custom icon request](https://github.com/elax46/custom-bran
 
 All icons are available in the [framework Iconify](https://github.com/iconify). You can use icons using the prefix `cbi`. Anyone who uses this icon set via the framework is reminded to comply with the license. For commercial purposes you can contact us
 
-- For all information  visit the website https://iconify.design
+- For all information visit the website https://iconify.design
 - For use visit https://iconify.design/docs/usage/
-- Browse Icons  https://icon-sets.iconify.design/cbi/
-
+- Browse Icons https://icon-sets.iconify.design/cbi/
 
 ## Available Icons
 
 To view all the available icons you can go to the following address
- -  [Icon Finder](https://elax46.github.io/custom-brand-icons/)
+
+- [Icon Finder](https://elax46.github.io/custom-brand-icons/)
 
 # Installation Methods
 
@@ -51,44 +53,45 @@ We recommend installing Custom brand icons card via [Home Assistant Community St
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=elax46&repository=custom-brand-icons&category=frontend)
 
 After installing through HACS:
+
 1. Add the following lines to your `configuration.yaml`
 
-    ```yaml
-    frontend:
-      extra_module_url:
-        - /local/community/custom-brand-icons/custom-brand-icons.js
-    ```
+   ```yaml
+   frontend:
+     extra_module_url:
+       - /local/community/custom-brand-icons/custom-brand-icons.js
+   ```
 
 2. (Optional) YAML mode users. Add the following to your lovelace configuration using the Raw Config editor under Configure UI or ui-lovelace.yaml.
 
-    ```yaml
-    resources:
-      - type: js
-        url: /local/community/custom-brand-icons/custom-brand-icons.js
-    ```
+   ```yaml
+   resources:
+     - type: js
+       url: /local/community/custom-brand-icons/custom-brand-icons.js
+   ```
 
 #### Manual Installation
 
-To add custom repositories please follow [this guide](https://hacs.xyz/docs/faq/custom_repositories/). Set URL to `` and category to `Lovelace`.
+To add custom repositories please follow [this guide](https://hacs.xyz/docs/faq/custom_repositories/). Set URL to ``and category to`Lovelace`.
 
 1. Download `custom-brand-icons.js` file from the [latest release](/releases/latest).
 2. Copy the `custom-brand-icons.js` file into `<config>/www/` the directory where your `configuration.yaml` resides.
 
 3. Add the following to the `frontend` section of your `configuration.yaml`
 
-    ```yaml
-    frontend:
-      extra_module_url:
-        - /local/custom-brand-icons.js
-    ```
+   ```yaml
+   frontend:
+     extra_module_url:
+       - /local/custom-brand-icons.js
+   ```
 
 4. (Optional) YAML mode users. Add the following to your lovelace configuration using the Raw Config editor under Configure UI or ui-lovelace.yaml.
 
-    ```yaml
-    resources:
-      - type: js
-        url: /local/custom-brand-icons.js
-    ```
+   ```yaml
+   resources:
+     - type: js
+       url: /local/custom-brand-icons.js
+   ```
 
 5. Restart Home Assistant.
 
@@ -97,7 +100,9 @@ To add custom repositories please follow [this guide](https://hacs.xyz/docs/faq/
 # User Manual
 
 #### Custom brand icons use the prefix `phu:`
+
 #### Append Name (of the icon) after `phu:`
+
 - Example: `phu:eggs` ![Preview](/icon-svg/eggs.svg)
 - Example: `phu:chicken` ![Preview](/icon-svg/chicken.svg)
 
@@ -125,42 +130,44 @@ type: entities
 
 ### Cache issue HomeAssistant 2024.1.1
 
-Some addons (including official) have had some [cache issues since 2024.1.1]([https://](https://github.com/elax46/custom-brand-icons/issues/560)), here are a few work arounds to try
+Some addons (including official) have had some [cache issues since 2024.1.1](<[https://](https://github.com/elax46/custom-brand-icons/issues/560)>), here are a few work arounds to try
 
 1. first go to settings, dashboard and 3 dots click resorces, add resource
 
-    ```yaml
-    /hacsfiles/custom-brand-icons/custom-brand-icons.js?hacstag=366862031202420
-    ```
+   ```yaml
+   /hacsfiles/custom-brand-icons/custom-brand-icons.js?hacstag=366862031202420
+   ```
 
 2. Add this second resource too
-    ```yaml
-    /local/community/custom-brand-icons/custom-brand-icons.js
-    ```
-
+   ```yaml
+   /local/community/custom-brand-icons/custom-brand-icons.js
+   ```
 
 #### Hard Reload (browser cache issue)
+
 - Reload browser by holding CTRL and pressing F5.
 - For Mac, hold ⌘ CMD and ⇧ SHIFT, then press R.
 
 #### Redownload Integration
-1. From left sidebar, select on *HACS*.
-2. Select on *Integrations*.
-3. From the top header bar (Integrations, Frontend), select *Frontend*.
-4. Search *custom-brand-icons* on the search bar.
-5. Select *Custom brand icons*.
+
+1. From left sidebar, select on _HACS_.
+2. Select on _Integrations_.
+3. From the top header bar (Integrations, Frontend), select _Frontend_.
+4. Search _custom-brand-icons_ on the search bar.
+5. Select _Custom brand icons_.
 6. From the top right, select the 3 vertical dots which opens a dropdown menu.
-7. Select *Redownload*.
+7. Select _Redownload_.
 8. **Hard reload** browser.
 
 #### Reinstall Integration
+
 1. Open the dropdown menu from **Step 6** of **Redownload Integration**.
-2. Select *Remove*, then select *Remove* again on the popup.
+2. Select _Remove_, then select _Remove_ again on the popup.
 3. This should bring you back to /hacs/frontend
 4. From the top right, select the 3 vertical dots which opens a dropdown menu.
-5. Select on *Custom repositories*.
-6. Find *Custom brand icons* and select it.
-7. On the bottom right, select the big blue *Download* icon.
+5. Select on _Custom repositories_.
+6. Find _Custom brand icons_ and select it.
+7. On the bottom right, select the big blue _Download_ icon.
 8. **Hard reload** browser.
 
 # Thanks for your support
@@ -171,6 +178,7 @@ Do you like these icons? Support the project with a pizza 🍕🍕
 [![coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/elax46)
 
 ## StarGazers
+
 [![Stargazers repo roster for @elax46/custom-brand-icons](https://reporoster.com/stars/elax46/custom-brand-icons)](/stargazers)
 
 ---
@@ -207,7 +215,6 @@ Example svg file below:
   </svg>
 ```
 
-
 ### Modify `custom-brand-icons.js` file
 
 Add the following entry to the `var icons` variable (list) of the `custom-brand-icons.js` file
@@ -220,16 +227,17 @@ Example entry:
 
 - `Bollard` = svg icon name used for `phu:`
 - `0, 0, 24.0, 24.0` = this data can be recovered from the svg file `viewBox="0 0 24 24"`
-  -  ***If this data is not present, you can leave the one indicated by me.***
-- `string` = this data can be recovered from the svg file `<path d="M21,12.5 C21,13.33 18.76,...."` In particular you will have to enter only the part of the vector code `"M21,12.5 C21,13.33 18.76"`. 
+  - **_If this data is not present, you can leave the one indicated by me._**
+- `string` = this data can be recovered from the svg file `<path d="M21,12.5 C21,13.33 18.76,...."` In particular you will have to enter only the part of the vector code `"M21,12.5 C21,13.33 18.76"`.
   - For an example, take a look at the [icons already inserted](dist/custom-brand-icons.js).
 
 (Optional) In case you want to create your own prefix you can edit the last line of the `custom-brand-icons.js`
 
 ```js
-window.customIconsets["yourprefix"] = getIcon;
+window.customIconsets['yourprefix'] = getIcon
 ```
 
 ### Contributions and Pull Requests
+
 After adding your svg icon in `icon-svg`, modifying `custom-brand-icons.js`, and updating `README.md.`
 Open pull requests on the **[dev branch](https://github.com/elax46/custom-brand-icons/pulls)**.
